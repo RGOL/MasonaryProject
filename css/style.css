@@ -4,6 +4,7 @@
   font-weight: normal;
   font-style: normal; }
 body {
+  position: relative;
   background: #4d4d4d;
   color: #2cb060;
   font-family: "Lato", sans-serif; }
@@ -19,10 +20,12 @@ body {
     color: #54be68; }
   body #wrapper {
     width: 100%;
-    margin: 0 auto; }
+    margin: 0; }
     body #wrapper header {
       background: #333333;
-      height: 170px; }
+      height: 170px;
+      width: 100%;
+      overflow: hidden; }
       body #wrapper header img {
         display: block;
         float: left;
@@ -39,21 +42,34 @@ body {
         position: relative;
         top: 15px;
         left: 260px; }
-    body #wrapper article#flyout {
+    body #wrapper #flyout {
       text-align: right;
       background: #333333;
       display: inline-block;
       position: fixed;
       right: 0;
       top: 230px;
-      padding-right: 10px; }
-      body #wrapper article#flyout h3 {
-        font-size: 1.5em; }
-    body #wrapper section#content {
-      width: auto;
+      padding-right: 10px;
+      z-index: 2; }
+      body #wrapper #flyout h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px; }
+      body #wrapper #flyout ul {
+        padding-left: 10px; }
+    body #wrapper #MasonryContainer {
+      width: 90%;
+      position: relative;
+      top: 0px;
       margin: 0 auto;
-      padding: 20px 0 0 20px; }
-      body #wrapper section#content article.piece {
-        display: block;
-        float: left;
-        margin: 0 20px 20px 0; }
+      padding-top: 10px; }
+      body #wrapper #MasonryContainer #content {
+        width: auto;
+        margin: 0 auto; }
+        body #wrapper #MasonryContainer #content .piece {
+          display: block;
+          float: left;
+          margin: 20px;
+          width: 340px;
+          -webkit-transition: left .3s ease-in-out, top .3s ease-in-out; }
+        body #wrapper #MasonryContainer #content .featured {
+          width: 680px; }

@@ -12,6 +12,7 @@ $bodyFont: 'Lato', sans-serif;
 };
 
 body {
+	position: relative;
 	background: #4d4d4d;
 	color: $bodyColor;
 
@@ -35,11 +36,13 @@ body {
 	#wrapper{
 
 		width: 100%;
-		margin: 0 auto;
+		margin: 0;
 
 		header {
 			background: $sectionColor;
 			height: 170px;
+			width: 100%;
+			overflow: hidden;
 
 			img {
 				display: block;
@@ -63,7 +66,7 @@ body {
 			}
 		}
 
-		article#flyout {
+		#flyout {
 			text-align: right;
 			background: $sectionColor;
 			display: inline-block;
@@ -71,24 +74,42 @@ body {
 			right: 0;
 			top: 230px;
 			padding-right: 10px; 
+			z-index: 2;
 
 			h3 {
 				font-size: 1.5em;
+				margin-bottom: 10px;
+			}
+
+			ul {
+				padding-left: 10px;
 			}
 
 		}
+		#MasonryContainer {
+				width: 90%;
+				position: relative;
+				top: 0px;
+				margin: 0 auto;
+				padding-top: 10px; 
 
-		section#content {
-			width: auto;
-			margin: 0 auto;
-			padding: 20px 0 0 20px;
+				#content {
+				width: auto;
+				margin: 0 auto;
 
-			article.piece {
+				.piece {
 				display: block;
 				float: left;
-				margin: 0 20px 20px 0;
+				margin: 20px;
+				width: 340px;
+				-webkit-transition: left .3s ease-in-out, top .3s ease-in-out;
+				}
+
+				.featured {
+					width: 680px;
+
+				}
 			}
 		}
-
 	}
 }

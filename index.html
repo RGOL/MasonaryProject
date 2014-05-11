@@ -12,67 +12,69 @@
 			<h1>PIC-O-MATIC</h2>
 			<h2>photography</h2>
 		</header>
-		<section id="content">
-			<article id="flyout">
-				<ul>
-				<li><h3>Portfolio</h3></li>
-				<a href=""><li><p>Back to Top</p></a></li><a/>
-				</ul>
-			</article>
-			<article class="piece">
-				<img src="img/01.jpg">
-			</article>
+		<section id="MasonryContainer">
+			<article id="content">
+				<article id="flyout">
+					<ul>
+					<li><h3>Portfolio</h3></li>
+					<a href=""><li><p>Back to Top</p></a></li><a/>
+					</ul>
+				</article>
+				<article class="piece">
+					<img src="img/01.jpg">
+				</article>
 
-			<article class="piece">
-				<img src="img/02.jpg">
-			</article>
+				<article class="piece">
+					<img src="img/02.jpg">
+				</article>
 
-			<article class="piece featured">
-				<img src="img/03f.jpg">
-			</article>
+				<article class="piece featured">
+					<img src="img/03f.jpg">
+				</article>
 
-			<article class="piece">
-				<img src="img/04.jpg">
-			</article>
+				<article class="piece">
+					<img src="img/04.jpg">
+				</article>
 
-			<article class="piece featured">
-				<img src="img/05f.jpg">
-			</article>
+				<article class="piece">
+					<img src="img/08.jpg">
+				</article>
 
-			<article class="piece">
-				<img src="img/06.jpg">
-			</article>
+				<article class="piece featured">
+					<img src="img/05f.jpg">
+				</article>
 
-			<article class="piece">
-				<img src="img/07.jpg">
-			</article>
+				<article class="piece">
+					<img src="img/06.jpg">
+				</article>
 
-			<article class="piece">
-				<img src="img/08.jpg">
-			</article>
+				<article class="piece">
+					<img src="img/07.jpg">
+				</article>
 
-			<article class="piece">
-				<img src="img/09.jpg">
-			</article>
+				<article class="piece">
+					<img src="img/09.jpg">
+				</article>
 
-			<article class="piece">
-				<img src="img/010.jpg">
-			</article>
+				<article class="piece">
+					<img src="img/010.jpg">
+				</article>
 
-			<article class="piece">
-				<img src="img/011.jpg">
-			</article>
+				<article class="piece">
+					<img src="img/011.jpg">
+				</article>
 
-			<article class="piece">
-				<img src="img/012.jpg">
-			</article>
+				<article class="piece">
+					<img src="img/012.jpg">
+				</article>
 
-			<article class="piece">
-				<img src="img/013f.jpg">
-			</article>
+				<article class="piece featured">
+					<img src="img/013f.jpg">
+				</article>
 
-			<article class="piece featured">
-				<img src="img/014.jpg">
+				<article class="piece">
+					<img src="img/014.jpg">
+				</article>
 			</article>
 		</section>
 		<footer>
@@ -82,6 +84,22 @@
 	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript">
+
+        var container = document.querySelector('#MasonryContainer');
+        var msnry;
+
+        imagesLoaded( container, function() {
+          msnry = new Masonry( container, {
+            columnWidth: 380,
+            itemSelector: '.piece',
+
+            isFitWidth: true,
+
+            transitionDuration: 0,
+          });
+        });
+
+    </script>
 
 	</script>
 
