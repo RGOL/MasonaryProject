@@ -1,3 +1,36 @@
+$titleColor: #54be68;
+$titleFont: 'helsinki', sans-serif;
+$bodyColor: #2cb060;
+$bodyFont: 'Lato', sans-serif;
+
+@font-face {
+	font-family: 'helsinki';
+	src:url('fonts/helsinki.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;	
+};
+
 body {
 	background: #4d4d4d;
+	color: $bodyColor;
+
+	a {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style-type: none;
+	}
+
+	#wrapper{
+
+		font-family: $bodyFont;
+
+	h1 {
+		font-size: 3.2em;
+		font-family: $titleFont;
+		color: $titleColor;
+	}
+
+	}
 }

@@ -1,2 +1,18 @@
+@font-face {
+  font-family: 'helsinki';
+  src: url("fonts/helsinki.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 body {
-  background: #4d4d4d; }
+  background: #4d4d4d;
+  color: #2cb060; }
+  body a {
+    text-decoration: none; }
+  body ul li {
+    list-style-type: none; }
+  body #wrapper {
+    font-family: "Lato", sans-serif; }
+    body #wrapper h1 {
+      font-size: 3.2em;
+      font-family: "helsinki", sans-serif;
+      color: #54be68; }
