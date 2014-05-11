@@ -1,3 +1,4 @@
+$sectionColor: #333;
 $titleColor: #54be68;
 $titleFont: 'helsinki', sans-serif;
 $bodyColor: #2cb060;
@@ -13,24 +14,66 @@ $bodyFont: 'Lato', sans-serif;
 body {
 	background: #4d4d4d;
 	color: $bodyColor;
+	width: 100%;
 
 	a {
 		text-decoration: none;
+		&:visited {color:$bodyColor;}
 	}
 
 	ul li {
 		list-style-type: none;
 	}
 
-	#wrapper{
-
-		font-family: $bodyFont;
-
 	h1 {
-		font-size: 3.2em;
+		font-size: 3.8em;
 		font-family: $titleFont;
 		color: $titleColor;
 	}
+
+	font-family: $bodyFont;
+
+	#wrapper{
+
+		header {
+			background: $sectionColor;
+			height: 170px;
+
+			img {
+				display: block;
+				float: left;
+				position: relative;
+				left: 10px;
+				top: 10px;
+			}
+
+			h1 {
+				position: relative;
+				left: 30px;
+				top: 15px;
+				margin: 0;
+			}
+			h2 {
+				margin: -10px 0 0 0;
+				position: relative;
+				top: 15px;
+				left: 260px;
+			}
+		}
+
+		article#flyout {
+			text-align: right;
+			background: $sectionColor;
+			display: inline-block;
+			position: fixed;
+			right: 0;
+			top: 230px;
+			padding-right: 10px; 
+
+			h3 {
+				font-size: 1.5em;
+			}
+		}
 
 	}
 }
