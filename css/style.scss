@@ -14,7 +14,6 @@ $bodyFont: 'Lato', sans-serif;
 body {
 	background: #4d4d4d;
 	color: $bodyColor;
-	width: 100%;
 
 	a {
 		text-decoration: none;
@@ -34,6 +33,9 @@ body {
 	font-family: $bodyFont;
 
 	#wrapper{
+
+		width: 100%;
+		margin: 0 auto;
 
 		header {
 			background: $sectionColor;
@@ -72,6 +74,19 @@ body {
 
 			h3 {
 				font-size: 1.5em;
+			}
+
+		}
+
+		section#content {
+			width: auto;
+			margin: 0 auto;
+			padding: 20px 0 0 20px;
+
+			article.piece {
+				display: block;
+				float: left;
+				margin: 0 20px 20px 0;
 			}
 		}
 

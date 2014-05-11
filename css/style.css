@@ -6,7 +6,6 @@
 body {
   background: #4d4d4d;
   color: #2cb060;
-  width: 100%;
   font-family: "Lato", sans-serif; }
   body a {
     text-decoration: none; }
@@ -18,32 +17,43 @@ body {
     font-size: 3.8em;
     font-family: "helsinki", sans-serif;
     color: #54be68; }
-  body #wrapper header {
-    background: #333333;
-    height: 170px; }
-    body #wrapper header img {
-      display: block;
-      float: left;
-      position: relative;
-      left: 10px;
-      top: 10px; }
-    body #wrapper header h1 {
-      position: relative;
-      left: 30px;
-      top: 15px;
-      margin: 0; }
-    body #wrapper header h2 {
-      margin: -10px 0 0 0;
-      position: relative;
-      top: 15px;
-      left: 260px; }
-  body #wrapper article#flyout {
-    text-align: right;
-    background: #333333;
-    display: inline-block;
-    position: fixed;
-    right: 0;
-    top: 230px;
-    padding-right: 10px; }
-    body #wrapper article#flyout h3 {
-      font-size: 1.5em; }
+  body #wrapper {
+    width: 100%;
+    margin: 0 auto; }
+    body #wrapper header {
+      background: #333333;
+      height: 170px; }
+      body #wrapper header img {
+        display: block;
+        float: left;
+        position: relative;
+        left: 10px;
+        top: 10px; }
+      body #wrapper header h1 {
+        position: relative;
+        left: 30px;
+        top: 15px;
+        margin: 0; }
+      body #wrapper header h2 {
+        margin: -10px 0 0 0;
+        position: relative;
+        top: 15px;
+        left: 260px; }
+    body #wrapper article#flyout {
+      text-align: right;
+      background: #333333;
+      display: inline-block;
+      position: fixed;
+      right: 0;
+      top: 230px;
+      padding-right: 10px; }
+      body #wrapper article#flyout h3 {
+        font-size: 1.5em; }
+    body #wrapper section#content {
+      width: auto;
+      margin: 0 auto;
+      padding: 20px 0 0 20px; }
+      body #wrapper section#content article.piece {
+        display: block;
+        float: left;
+        margin: 0 20px 20px 0; }
